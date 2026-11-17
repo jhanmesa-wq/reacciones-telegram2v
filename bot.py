@@ -34,7 +34,7 @@ load_dotenv()
 # .env me: BOT_TOKENS=token1,token2,token3
 # Pehla token main bot hai (updates receive karta hai),
 # baaki bots sirf reaction lagate hain (unhe bhi group/channel me admin banao).
-RAW_TOKENS = os.getenv("BOT_TOKENS") or os.getenv("BOT_TOKEN", "9116824186:AAEX-gtp7-3seRFQ6Iq7WtU69_gI-JfYdPc")
+RAW_TOKENS = os.getenv("BOT_TOKENS") or os.getenv("BOT_TOKEN", "")
 TOKENS = [t.strip() for t in RAW_TOKENS.split(",") if t.strip()]
 
 # Telegram ke allowed reaction emojis (sirf yehi kaam karte hain)
